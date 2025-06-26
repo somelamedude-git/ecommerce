@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const options = {discriminatorKey: 'kind', timestamps:true};
-const { hashPasswords } = require('../utils/password.util');
+const { hashPasswords } = require('../utils/password.util.js');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 require('dotenv').config({ path: '../.env' });
